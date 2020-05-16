@@ -9,7 +9,6 @@ bool fillSoduko(vector<vector<int>>& v){
 	for(int i=0;i<9;i++){
 		for(int j=0;j<9;j++){
 			if(v[i][j] == -1){
-				//cout << i << " " << j  << endl;
 				vector<bool> possible(10,true);
 				for(int k=0;k<9;k++){
 					if(v[i][k] != -1){
